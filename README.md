@@ -4,14 +4,9 @@ Android Library to check if there is an Ad Blocker enabled and shows a customiza
 AdBlockerAdvise works on API 8+.
 
 ## How to include
+Add this line to your **build.gradle**:
 ```Java
-repositories {
-	jcenter()
-}
-
-dependencies {
-	compile 'com.javiersantos.adblockeradvise:library:1.0'
-}
+	compile 'com.github.javiersantos.adblockeradvise:library:1.0'
 ```
 
 ## Implementation
