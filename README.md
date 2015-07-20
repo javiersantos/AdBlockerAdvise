@@ -6,29 +6,35 @@ AdBlockerAdvise works on API 8+.
 ## How to include
 Add this line to your **build.gradle**:
 ```Java
-	compile 'com.github.javiersantos.adblockeradvise:library:1.0'
+compile 'com.github.javiersantos.adblockeradvise:library:1.0'
 ```
 
 ## Implementation
 ### With default title and content
-Shows an Alert Dialog if an Ad blocker is activated, using default title and content.
+Shows an Alert Dialog if an Ad blocker is enabled, using default title and content.
 ```Java
 AdBlockerAdviseDialog adBlockerAdvise = new AdBlockerAdviseDialog(context);
 adBlockerAdvise.show();
 ```
 
 ### With custom title and content
-Shows an Alert Dialog if an Ad blocker is activated, using custom title and content.
+Shows an Alert Dialog if an Ad blocker is enabled, using custom title and content.
 ```Java
 AdBlockerAdviseDialog adBlockerAdvise = new AdBlockerAdviseDialog(context, title, content);
 adBlockerAdvise.show();
 ```
 
 ### Display dialog only once
-By default, AdBlockerAdviseDialog will show a dialog every time it detects an activated Ad Blocker, but it can be set to only appear once.
+By default, AdBlockerAdviseDialog will show a dialog every time it detects an enabled Ad Blocker, but it can be set to only appear once.
 ```Java
 AdBlockerAdviseDialog adBlockerAdvise = new AdBlockerAdviseDialog(context, ..., true);
 adBlockerAdvise.show();
+```
+
+## Other features
+### Retrieve if an Ad Blocker is enabled
+```Java
+boolean isAdBlocker = AdBlockerAdvise.isAdBlockerActivated();
 ```
 
 ## License
