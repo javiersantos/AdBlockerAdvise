@@ -1,14 +1,36 @@
 # AdblockerAdvise
+Android Library to check if there is an Ad blocker activated and shows a Dialog.
+
+## Implementation
+### With default title and content
+Shows an Alert Dialog if an Ad blocker is activated with default title and content
+```Java
+AdBlockerAdviseDialog adBlockerAdvise = new AdBlockerAdviseDialog(context);
+adBlockerAdvise.show();
+```
+
+### With custom title and content
+Shows an Alert Dialog if an Ad blocker is activated with custom title and content
+```Java
+AdBlockerAdviseDialog adBlockerAdvise = new AdBlockerAdviseDialog(context, title, content);
+adBlockerAdvise.show();
+```
+
+### Display dialog only once
+```Java
+AdBlockerAdviseDialog adBlockerAdvise = new AdBlockerAdviseDialog(context, ..., true);
+adBlockerAdvise.show();
+```
 
 ## License
 	Copyright 2015 Javier Santos
-
+	
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
 	You may obtain a copy of the License at
-
+	
 	   http://www.apache.org/licenses/LICENSE-2.0
-
+	
 	Unless required by applicable law or agreed to in writing, software
 	distributed under the License is distributed on an "AS IS" BASIS,
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
