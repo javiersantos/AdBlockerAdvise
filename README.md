@@ -3,7 +3,7 @@ Android Library to check if there is an Ad Blocker enabled and shows a customiza
 
 AdBlockerAdvise works on API 8+.
 
-![AdBlockerAdvise](http://i.imgur.com/9mUT216.png)]
+![AdBlockerAdvise](http://i.imgur.com/9mUT216.png)
 
 ## How to include
 Add this line to your **build.gradle**:
