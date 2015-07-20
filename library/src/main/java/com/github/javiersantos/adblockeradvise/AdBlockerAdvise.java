@@ -1,4 +1,4 @@
-package com.javiersantos.adblockeradvise;
+package com.github.javiersantos.adblockeradvise;
 
 public class AdBlockerAdvise {
 

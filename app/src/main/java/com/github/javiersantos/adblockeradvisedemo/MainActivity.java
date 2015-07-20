@@ -1,16 +1,14 @@
-package com.javiersantos.adblockeradvisedemo;
+package com.github.javiersantos.adblockeradvisedemo;
 
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
-import com.javiersantos.adblockeradvise.*;
+import com.github.javiersantos.adblockeradvise.*;
 
 
 public class MainActivity extends AppCompatActivity {
