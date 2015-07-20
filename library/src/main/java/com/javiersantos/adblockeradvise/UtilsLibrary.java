@@ -1,14 +1,16 @@
 package com.javiersantos.adblockeradvise;
 
+import android.content.Context;
+
 import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-class UtilsChecker {
+class UtilsLibrary {
 
-    static Boolean isAdblockActivated() {
+    static Boolean isAdBlockerActivated() {
         Boolean res = false;
 
         try {
@@ -29,4 +31,9 @@ class UtilsChecker {
 
         return res;
     }
+
+    static String getAppName(Context context) {
+        return context.getString(context.getApplicationInfo().labelRes);
+    }
+
 }

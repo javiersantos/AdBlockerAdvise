@@ -1,19 +1,25 @@
-package com.javiersantos.adblockeradvise;
+package com.javiersantos.adblockeradvisedemo;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.javiersantos.adblockeradvise.*;
+
 
 public class MainActivity extends AppCompatActivity {
+    private Context context;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        this.context = this;
 
-        AdblockerAdviseLibrary.showAlertDialog(this, null, null, false);
+        AdBlockerAdviseDialog adBlockerAdviseDialog = new AdBlockerAdviseDialog(context, false);
+        adBlockerAdviseDialog.show();
 
     }
 

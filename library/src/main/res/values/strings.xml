@@ -4,5 +4,4 @@
     <string name="dialog_title">An ad blocker is activated</string>
     <string name="dialog_text">You are not going to see ads because you are blocking them on your device by some app. %s uses ads to maintain active the development.</string>
     <string name="dialog_button">I understand</string>
-    <string name="dialog_this_app">This app</string>
 </resources>

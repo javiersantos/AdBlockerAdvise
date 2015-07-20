@@ -9,7 +9,7 @@ class LibraryPreferences {
     private SharedPreferences.Editor editor;
     private Context context;
 
-    public static final String KeyAdblockerAdvise = "prefAdblockerAdvise";
+    public static final String KeyAdBlockerAdvise = "prefAdBlockerAdvise";
 
     public LibraryPreferences(Context context) {
         this.sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);
@@ -17,12 +17,12 @@ class LibraryPreferences {
         this.context = context;
     }
 
-    public Boolean getAdblockerAdvise() {
-        return sharedPreferences.getBoolean(KeyAdblockerAdvise, false);
+    public Boolean getAdBlockerAdvise() {
+        return sharedPreferences.getBoolean(KeyAdBlockerAdvise, false);
     }
 
-    public void setAdblockerAdvise(Boolean res) {
-        editor.putBoolean(KeyAdblockerAdvise, res);
+    public void setAdBlockerAdvise(Boolean res) {
+        editor.putBoolean(KeyAdBlockerAdvise, res);
         editor.commit();
     }
 
