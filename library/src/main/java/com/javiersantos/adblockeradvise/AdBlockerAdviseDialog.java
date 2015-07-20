@@ -5,9 +5,21 @@ import android.content.Context;
 public class AdBlockerAdviseDialog {
     private LibraryPreferences libraryPreferences;
     private Context context;
-    private boolean onlyOnce = false;
+    private boolean onlyOnce;
     private String title;
     private String text;
+
+    /**
+     * Shows an Alert Dialog if an Ad blocker is activated with default title and content
+     * @param context
+     */
+    public AdBlockerAdviseDialog(Context context) {
+        this.libraryPreferences = new LibraryPreferences(context);
+        this.context = context;
+        this.title = context.getResources().getString(R.string.dialog_title);
+        this.text = String.format(context.getResources().getString(R.string.dialog_text), UtilsLibrary.getAppName(context));
+        this.onlyOnce = false;
+    }
 
     /**
      * Shows an Alert Dialog if an Ad blocker is activated with default title and content
@@ -20,6 +32,20 @@ public class AdBlockerAdviseDialog {
         this.title = context.getResources().getString(R.string.dialog_title);
         this.text = String.format(context.getResources().getString(R.string.dialog_text), UtilsLibrary.getAppName(context));
         this.onlyOnce = onlyOnce;
+    }
+
+    /**
+     * Shows an Alert Dialog if an Ad blocker is activated with custom title and content
+     * @param context
+     * @param title Title of the Alert Dialog
+     * @param text Content of the Alert Dialog
+     */
+    public AdBlockerAdviseDialog(Context context, String title, String text) {
+        this.libraryPreferences = new LibraryPreferences(context);
+        this.context = context;
+        this.title = title;
+        this.text = text;
+        this.onlyOnce = false;
     }
 
     /**
