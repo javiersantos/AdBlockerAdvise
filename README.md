@@ -1,16 +1,16 @@
 # AdBlockerAdvise
-Android Library to check if there is an Ad Blocker activated and shows a customizable dialog.
+Android Library to check if there is an Ad Blocker enabled and shows a customizable dialog.
 
 AdBlockerAdvise works on API 8+.
 
 ## How to include
 ```Java
 repositories {
-    jcenter()
+	jcenter()
 }
 
 dependencies {
-  compile 'com.javiersantos.adblockeradvise:library:1.0'
+	compile 'com.javiersantos.adblockeradvise:library:1.0'
 }
 ```
 
