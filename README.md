@@ -3,6 +3,17 @@ Android Library to check if there is an Ad Blocker activated and shows a customi
 
 AdBlockerAdvise works on API 8+.
 
+## How to include
+```Java
+repositories {
+    jcenter()
+}
+
+dependencies {
+  compile 'com.javiersantos.adblockeradvise:library:1.0'
+}
+```
+
 ## Implementation
 ### With default title and content
 Shows an Alert Dialog if an Ad blocker is activated, using default title and content.
