@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dialog_title">Un bloqueador de publicidad está activado</string>
+    <string name="dialog_text">No vas a ver publicidad por que las estás bloqueando en tu dispositivo. %s usa publicidad para mantener el desarrollo activo y es una ayuda importante para el desarrollador.</string>
+    <string name="dialog_button">Entiendo</string>
+</resources>
