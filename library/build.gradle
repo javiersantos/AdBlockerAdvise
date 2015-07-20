@@ -1,4 +1,26 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'com.jfrog.bintray'
+
+version = "1.0"
+
+Properties properties = new Properties()
+properties.load(project.rootProject.file('local.properties').newDataInputStream())
+
+bintray {
+    user = properties.getProperty("bintray.user")
+    key = properties.getProperty("bintray.apikey")
+
+    configurations = ['archives']
+    pkg {
+        repo = "maven"
+        name = "adblockeradvise"
+        websiteUrl = "https://github.com/javiersantos/AdBlockerAdvise"
+        vcsUrl = "https://github.com/javiersantos/AdBlockerAdvise.git"
+        licenses = ["Apache-2.0"]
+        publish = true
+    }
+}
 
 android {
     compileSdkVersion 22
