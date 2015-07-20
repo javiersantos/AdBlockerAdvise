@@ -1,5 +1,16 @@
 <resources>
     <string name="app_name">AdblockerAdvise Demo</string>
 
-    <string name="action_settings">Settings</string>
+    <string name="no_adblocker">You don\'t have any Ad Blocker activated</string>
+    <string name="no_adblocker_description">You won\'t see any dialog because you aren\'t using an Ad Blocker. Congratulations!</string>
+    <string name="yes_adblocker">You have an Ad Blocker activated</string>
+    <string name="yes_adblocker_description">You have saw a dialog about Ad Blockers because you are using an Ad Blocker. It\'s working!</string>
+    <string name="again_adblocker">Want to show the Basic dialog?</string>
+    <string name="again_adblocker_description">Tap to display the basic dialog implementation and see how it works.</string>
+    <string name="custom_adblocker">Or with a custom title and content</string>
+    <string name="custom_adblocker_description">You can also create a dialog with custom title and content. Tap to show.</string>
+
+    <string name="custom_dialog">Ads are important!</string>
+    <string name="custom_dialog_content">You should disable ads, it\'s really helpful for the developer!</string>
+
 </resources>
