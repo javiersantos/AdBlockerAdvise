@@ -8,12 +8,6 @@ AdBlockerAdvise works on API 8+.
 ## How to include
 Add this line to your **build.gradle**:
 ```Java
-repositories {
-    maven {
-        url  "http://dl.bintray.com/javiersantos/maven" 
-    }
-}
-
 dependencies {
 	compile 'com.github.javiersantos.adblockeradvise:library:1.0'
 }
