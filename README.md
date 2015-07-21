@@ -1,4 +1,7 @@
 # AdBlockerAdvise
+
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-AdBlockerAdvise-brightgreen.svg?style=flat)](http://android-arsenal.com/details/1/2175)
+
 Android Library to check if there is an Ad Blocker enabled and shows a customizable dialog.
 
 AdBlockerAdvise works on API 8+.
