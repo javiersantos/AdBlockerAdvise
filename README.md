@@ -1,10 +1,11 @@
-# AdBlockerAdvise
+<h1 align="center">AdBlockerAdvise</h1>
+<h4 align="center">Android Library. API 8+ required.</h4>
 
-[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-AdBlockerAdvise-brightgreen.svg?style=flat)](http://android-arsenal.com/details/1/2175)
+<p align="center">
+  <a target="_blank" href="http://android-arsenal.com/details/1/2175"><img src="https://img.shields.io/badge/Android%20Arsenal-AdBlockerAdvise-brightgreen.svg?style=flat"></a>
+</p>
 
-Android Library to check if there is an Ad Blocker enabled and shows a customizable dialog.
-
-AdBlockerAdvise works on API 8+.
+<p align="center">Android Library to check if there is an Ad Blocker enabled and shows a customizable dialog.</p>
 
 ![AdBlockerAdvise](http://i.imgur.com/9mUT216.png)
 
