@@ -3,10 +3,11 @@
 
 <p align="center">
   <a target="_blank" href="http://android-arsenal.com/details/1/2175"><img src="https://img.shields.io/badge/Android%20Arsenal-AdBlockerAdvise-brightgreen.svg?style=flat"></a>
+  <span class="badge-paypal"><a href="https://www.paypal.me/javiersantos" title="Donate using PayPal"><img src="https://img.shields.io/badge/paypal-donate-yellow.svg" /></a></span>
+  <span class="badge-patreon"><a href="http://patreon.com/javiersantos" title="Donate using Patreon"><img src="https://img.shields.io/badge/patreon-donate-yellow.svg" /></a></span>
 </p>
 
 <p align="center">Android Library to check if there is an Ad Blocker enabled and shows a customizable dialog.</p>
-<p align="center"><a href="https://www.paypal.me/javiersantos">Donate</a> | <a href="https://www.patreon.com/javiersantos">Patreon</a></p>
 
 ## How to include
 Add this line to your **build.gradle**:
