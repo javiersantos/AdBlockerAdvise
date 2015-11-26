@@ -6,8 +6,7 @@
 </p>
 
 <p align="center">Android Library to check if there is an Ad Blocker enabled and shows a customizable dialog.</p>
-
-![AdBlockerAdvise](http://i.imgur.com/9mUT216.png)
+<p align="center"><a href="https://www.paypal.me/javiersantos">Donate</a> | <a href="https://www.patreon.com/javiersantos">Patreon</a></p>
 
 ## How to include
 Add this line to your **build.gradle**:
@@ -44,6 +43,8 @@ adBlockerAdvise.show();
 ```Java
 boolean isAdBlocker = AdBlockerAdvise.isAdBlockerActivated();
 ```
+
+![AdBlockerAdvise](http://i.imgur.com/9mUT216.png)
 
 ## License
 	Copyright 2015 Javier Santos
