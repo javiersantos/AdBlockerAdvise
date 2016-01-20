@@ -3,7 +3,7 @@
 
 <p align="center">
   <a target="_blank" href="https://android-arsenal.com/api?level=8"><img src="https://img.shields.io/badge/API-8%2B-orange.svg?style=flat"></a>
-  <a target="_blank" href="http://android-arsenal.com/details/1/2175"><img src="https://img.shields.io/badge/Android%20Arsenal-AdBlockerAdvise-brightgreen.svg?style=flat"></a>
+  <a target="_blank" href="http://android-arsenal.com/details/1/2175"><img src="https://img.shields.io/badge/Android%20Arsenal-AdBlockerAdvise-blue.svg?style=flat"></a>
   <span class="badge-paypal"><a target="_blank" href="https://www.paypal.me/javiersantos" title="Donate using PayPal"><img src="https://img.shields.io/badge/paypal-donate-yellow.svg" /></a></span>
   <span class="badge-patreon"><a target="_blank" href="http://patreon.com/javiersantos" title="Donate using Patreon"><img src="https://img.shields.io/badge/patreon-donate-yellow.svg" /></a></span>
 </p>
