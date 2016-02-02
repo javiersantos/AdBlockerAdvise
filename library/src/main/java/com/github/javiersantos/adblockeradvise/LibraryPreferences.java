@@ -7,14 +7,12 @@ import android.preference.PreferenceManager;
 class LibraryPreferences {
     private SharedPreferences sharedPreferences;
     private SharedPreferences.Editor editor;
-    private Context context;
 
     public static final String KeyAdBlockerAdvise = "prefAdBlockerAdvise";
 
     public LibraryPreferences(Context context) {
         this.sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);
         this.editor = sharedPreferences.edit();
-        this.context = context;
     }
 
     public Boolean getAdBlockerAdvise() {
