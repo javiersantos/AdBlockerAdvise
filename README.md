@@ -11,10 +11,19 @@
 <p align="center">Android Library to check if there is an Ad Blocker enabled and shows a customizable dialog.</p>
 
 ## How to include
-Add this line to your **build.gradle**:
+Add the repository to your project **build.gradle**:
+```Java
+repositories {
+    maven {
+        url "https://jitpack.io"
+    }
+}
+```
+
+And add the library to your module **build.gradle**:
 ```Java
 dependencies {
-	compile 'com.github.javiersantos.adblockeradvise:library:1.0'
+    compile 'com.github.javiersantos:AdBlockerAdvise:1.0.1'
 }
 ```
 
