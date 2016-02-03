@@ -2,7 +2,8 @@
 <h4 align="center">Android Library</h4>
 
 <p align="center">
-  <a target="_blank" href="https://android-arsenal.com/api?level=8"><img src="https://img.shields.io/badge/API-8%2B-orange.svg?style=flat"></a>
+  <a target="_blank" href="https://android-arsenal.com/api?level=8"><img src="https://img.shields.io/badge/API-8%2B-orange.svg"></a>
+  <a target="_blank" href="https://travis-ci.org/javiersantos/AdBlockerAdvise"><img src="https://travis-ci.org/javiersantos/AdBlockerAdvise.svg?branch=master"></a>
   <a target="_blank" href="http://android-arsenal.com/details/1/2175"><img src="https://img.shields.io/badge/Android%20Arsenal-AdBlockerAdvise-blue.svg"></a>
   <a target="_blank" href="https://www.paypal.me/javiersantos" title="Donate using PayPal"><img src="https://img.shields.io/badge/paypal-donate-yellow.svg" /></a>
   <a target="_blank" href="http://patreon.com/javiersantos" title="Donate using Patreon"><img src="https://img.shields.io/badge/patreon-donate-yellow.svg" /></a>
@@ -55,7 +56,7 @@ adBlockerAdvise.show();
 boolean isAdBlocker = AdBlockerAdvise.isAdBlockerActivated();
 ```
 
-![AdBlockerAdvise](http://i.imgur.com/9mUT216.png)
+![AdBlockerAdvise](https://raw.githubusercontent.com/javiersantos/AdBlockerAdvise/master/Screenshots/banner.png)
 
 ## License
 	Copyright 2015 Javier Santos
