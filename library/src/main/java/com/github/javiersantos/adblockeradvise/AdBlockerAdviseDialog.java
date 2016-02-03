@@ -11,6 +11,7 @@ public class AdBlockerAdviseDialog {
 
     /**
      * Shows an Alert Dialog if an Ad blocker is activated with default title and content
+     *
      * @param context
      */
     public AdBlockerAdviseDialog(Context context) {
@@ -22,10 +23,40 @@ public class AdBlockerAdviseDialog {
     }
 
     /**
+     * Set a custom title for the dialog (when an ad blocker is enabled)
+     *
+     * @param title dialog title
+     */
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    /**
+     * Set a custom descripion for the dialog (when an ad blocker is enabled)
+     *
+     * @param content dialog description
+     */
+    public void setContent(String content) {
+        this.text = content;
+    }
+
+    /**
+     * Set if the dialog will be only shown once. Default: false.
+     *
+     * @param onlyOnce display dialog only once
+     */
+    public void showOnlyOnce(Boolean onlyOnce) {
+        this.onlyOnce = onlyOnce;
+    }
+
+    /**
      * Shows an Alert Dialog if an Ad blocker is activated with default title and content
+     *
      * @param context
      * @param onlyOnce Alert Dialog will be showed only one time
+     * @deprecated use {@link #AdBlockerAdviseDialog(Context)} instead
      */
+    @Deprecated
     public AdBlockerAdviseDialog(Context context, boolean onlyOnce) {
         this.libraryPreferences = new LibraryPreferences(context);
         this.context = context;
@@ -36,10 +67,13 @@ public class AdBlockerAdviseDialog {
 
     /**
      * Shows an Alert Dialog if an Ad blocker is activated with custom title and content
+     *
      * @param context
      * @param title Title of the Alert Dialog
      * @param text Content of the Alert Dialog
+     * @deprecated use {@link #AdBlockerAdviseDialog(Context)} instead
      */
+    @Deprecated
     public AdBlockerAdviseDialog(Context context, String title, String text) {
         this.libraryPreferences = new LibraryPreferences(context);
         this.context = context;
@@ -50,11 +84,14 @@ public class AdBlockerAdviseDialog {
 
     /**
      * Shows an Alert Dialog if an Ad blocker is activated with custom title and content
+     *
      * @param context
      * @param title Title of the Alert Dialog
      * @param text Content of the Alert Dialog
      * @param onlyOnce Alert Dialog will be showed only one time
+     * @deprecated use {@link #AdBlockerAdviseDialog(Context)} instead
      */
+    @Deprecated
     public AdBlockerAdviseDialog(Context context, String title, String text, boolean onlyOnce) {
         this.libraryPreferences = new LibraryPreferences(context);
         this.context = context;

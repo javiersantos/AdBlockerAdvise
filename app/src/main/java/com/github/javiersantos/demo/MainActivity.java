@@ -13,11 +13,6 @@ import com.github.javiersantos.adblockeradvise.*;
 
 public class MainActivity extends AppCompatActivity {
     private Context context;
-    private Toolbar toolbar;
-    private CardView card_again;
-    private CardView card_custom;
-    private TextView card_title;
-    private TextView card_description;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initUI() {
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         if (getSupportActionBar() != null) {
             getSupportActionBar().setTitle(R.string.app_name);
@@ -41,16 +36,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initAdBlocker() {
-        final AdBlockerAdviseDialog adBlockerAdviseDialog = new AdBlockerAdviseDialog(context, false);
-        final AdBlockerAdviseDialog adBlockerAdviseDialogCustom = new AdBlockerAdviseDialog(context,
-                getResources().getString(R.string.custom_dialog),
-                getResources().getString(R.string.custom_dialog_content),
-                false);
+        // Default AdBlockerAdviseDialog
+        final AdBlockerAdviseDialog adBlockerAdviseDialog = new AdBlockerAdviseDialog(context);
 
-        card_again = (CardView) findViewById(R.id.card_again);
-        card_custom = (CardView) findViewById(R.id.card_custom);
-        card_title = (TextView) findViewById(R.id.adblockeradvise_title);
-        card_description = (TextView) findViewById(R.id.adblockeradvise_description);
+        // Custom AdBlockerAdviseDialog
+        final AdBlockerAdviseDialog adBlockerAdviseDialogCustom = new AdBlockerAdviseDialog(context);
+        adBlockerAdviseDialogCustom.setTitle(getResources().getString(R.string.custom_dialog));
+        adBlockerAdviseDialogCustom.setContent(getResources().getString(R.string.custom_dialog_content));
+
+        CardView card_again = (CardView) findViewById(R.id.card_again);
+        CardView card_custom = (CardView) findViewById(R.id.card_custom);
+        TextView card_title = (TextView) findViewById(R.id.adblockeradvise_title);
+        TextView card_description = (TextView) findViewById(R.id.adblockeradvise_description);
 
         if (AdBlockerAdvise.isAdBlockerActivated()) {
             adBlockerAdviseDialog.show();
