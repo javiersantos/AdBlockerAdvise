@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="define_adblockeradvise"></string>
+    <string name="library_adblockeradvise_author">Javier Santos</string>
+    <string name="library_adblockeradvise_authorWebsite">https://github.com/javiersantos</string>
+    <string name="library_adblockeradvise_libraryName">AdBlockerAdvise</string>
+    <string name="library_adblockeradvise_libraryDescription">AdBlockerAdvise is a library that checks if there is an Ad Blocker enabled and shows a customizable Material dialog.</string>
+    <string name="library_adblockeradvise_libraryWebsite">https://github.com/javiersantos/AdBlockerAdvise</string>
+    <string name="library_adblockeradvise_licenseId">apache_2_0</string>
+    <string name="library_adblockeradvise_isOpenSource">true</string>
+    <string name="library_adblockeradvise_repositoryLink">https://github.com/javiersantos/AdBlockerAdvise</string>
+</resources>
