@@ -1,4 +1,4 @@
-package com.github.javiersantos.adblockeradvisedemo;
+package com.github.javiersantos.demo;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(com.github.javiersantos.demo.R.layout.activity_main);
         this.context = this;
 
         initUI();
@@ -59,6 +59,8 @@ public class MainActivity extends AppCompatActivity {
         } else {
             card_title.setText(getResources().getString(R.string.no_adblocker));
             card_description.setText(getResources().getString(R.string.no_adblocker_description));
+            card_custom.setVisibility(View.GONE);
+            card_again.setVisibility(View.GONE);
         }
 
         card_again.setOnClickListener(new View.OnClickListener() {
