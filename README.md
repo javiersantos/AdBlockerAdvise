@@ -9,7 +9,7 @@
   <a target="_blank" href="http://patreon.com/javiersantos" title="Donate using Patreon"><img src="https://img.shields.io/badge/patreon-donate-yellow.svg" /></a>
 </p>
 
-<p align="center">Android Library to check if there is an Ad Blocker enabled and shows a customizable dialog.</p>
+<p align="center">Android Library that checks if there is an Ad Blocker enabled and shows a customizable Material dialog.</p>
 
 ## How to include
 Add the repository to your project **build.gradle**:
