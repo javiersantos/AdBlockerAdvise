@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         TextView card_description = (TextView) findViewById(R.id.adblockeradvise_description);
 
         if (AdBlockerAdvise.isAdBlockerActivated()) {
-            adBlockerAdviseDialog.show();
+            adBlockerAdviseDialog.start();
             card_title.setText(getResources().getString(R.string.yes_adblocker));
             card_description.setText(getResources().getString(R.string.yes_adblocker_description));
         } else {
@@ -63,14 +63,14 @@ public class MainActivity extends AppCompatActivity {
         card_again.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                adBlockerAdviseDialog.show();
+                adBlockerAdviseDialog.start();
             }
         });
 
         card_custom.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                adBlockerAdviseDialogCustom.show();
+                adBlockerAdviseDialogCustom.start();
             }
         });
 

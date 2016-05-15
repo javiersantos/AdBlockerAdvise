@@ -1,25 +1,20 @@
 package com.github.javiersantos.adblockeradvise;
 
 import android.content.Context;
-
-import com.afollestad.materialdialogs.MaterialDialog;
+import android.content.DialogInterface;
+import android.support.v7.app.AlertDialog;
 
 class UtilsUI {
 
-    static MaterialDialog showTitleContent(Context context, String title, String text) {
-        MaterialDialog.Builder materialBuilder = new MaterialDialog.Builder(context);
-        materialBuilder.title(title);
-        materialBuilder.content(text);
-        materialBuilder.positiveText(context.getResources().getString(R.string.dialog_button));
-        materialBuilder.cancelable(false);
-        materialBuilder.callback(new MaterialDialog.ButtonCallback() {
-            @Override
-            public void onPositive(MaterialDialog dialog) {
-                dialog.dismiss();
-            }
-        });
-
-        return materialBuilder.show();
+    static AlertDialog showTitleContent(Context context, String title, String text) {
+        return new AlertDialog.Builder(context)
+                .setTitle(title)
+                .setMessage(text)
+                .setPositiveButton(context.getResources().getString(R.string.dialog_button), new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {}
+                })
+                .setCancelable(false).show();
     }
 
 }
