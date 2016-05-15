@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="define_adblockeradvise"></string>
+    <string name="define_adblockeradvise"/>
     <string name="library_adblockeradvise_author">Javier Santos</string>
     <string name="library_adblockeradvise_authorWebsite">https://github.com/javiersantos</string>
     <string name="library_adblockeradvise_libraryName">AdBlockerAdvise</string>
