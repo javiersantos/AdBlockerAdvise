@@ -24,7 +24,7 @@ repositories {
 And add the library to your module **build.gradle**:
 ```Java
 dependencies {
-    compile 'com.github.javiersantos:AdBlockerAdvise:1.1'
+    compile 'com.github.javiersantos:AdBlockerAdvise:1.2'
 }
 ```
 
@@ -32,7 +32,7 @@ dependencies {
 ### Activity
 ```Java
 AdBlockerAdviseDialog adBlockerAdvise = new AdBlockerAdviseDialog(this);
-adBlockerAdvise.show();
+adBlockerAdvise.start();
 ```
 
 ## Customization
@@ -42,14 +42,14 @@ Use the builder and add following.
 ```Java
 adBlockerAdvise.setTitle("Don't use an Ad Blocker!");
 adBlockerAdvise.setContent("The developer will be happier if you disable them.");
-adBlockerAdvise.show();
+adBlockerAdvise.start();
 ```
 
 ### Display dialog only once
 By default, AdBlockerAdviseDialog will show a dialog every time it detects an enabled Ad Blocker, but it can be set to only appear once.
 ```Java
 adBlockerAdvise.showOnlyOnce(true);
-adBlockerAdvise.show();
+adBlockerAdvise.start();
 ```
 
 ## Other features
@@ -61,7 +61,7 @@ boolean isAdBlocker = AdBlockerAdvise.isAdBlockerActivated();
 ![AdBlockerAdvise](https://raw.githubusercontent.com/javiersantos/AdBlockerAdvise/master/Screenshots/banner.png)
 
 ## License
-	Copyright 2015 Javier Santos
+	Copyright 2015-2016 Javier Santos
 	
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
